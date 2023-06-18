@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="styles/modal.css"/>
+  <link rel="stylesheet" href="styles/login.css"/>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d8d58f48fa.js" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="js/sign.js"></script>
+</head>
+
+<body>
+  <img src="MyPalLogo.png" id="logo" style="width:250px; height:250px; margin-left:41%;">
+  <h1>MyPal</h1>
+  <div id="formContainer">
+    <input id="email" type='email' name='email' placeholder='Email' required class="form-item"><br>
+  	<input id="password" type='password' name='password' placeholder='Password' required class="form-item"><br>
+    <button onclick="signIn()" id="signIn" class="form-item signbtn">Sign In</button><br>
+  </div>
+  <button id="openModal" class="signbtn2">Sign Up here!</button>
+
+  <!--Modal box-->
+  <div id="Modal" class="modal">
+    <div id="modalContainer">
+      <span class="close">&times;</span>
+      <input id="email2" type='email' name='email' placeholder='Email' required class="form-item"><br>
+      <input id="password2" type="password" name="password" placeholder="Password" required="required" class="form-item"><br>
+      <button onclick="signUp()" id="signUp" class="form-item signbtn">Sign Up</button>
+    </div>
+
+    <script>
+    var modal = document.getElementById("Modal");
+    var button = document.getElementById("openModal")
+    var span = document.getElementsByClassName("close")[0];
+    button.onclick= function(){
+      modal.style.display="block"
+    }
+    span.onclick= function(){
+      modal.style.display="none"
+    }
+    window.onclick= function(event){
+      if (event.target==modal){
+        modal.style.display="none";
+      }
+    }
+    </script>
+  </div>
+</body>
+</html>

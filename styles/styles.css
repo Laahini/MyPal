@@ -1,0 +1,787 @@
+body,
+html {
+  font-size: 0.95rem;
+  background: #fcfcfa;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+.grid6{
+  display:grid;
+  grid-template-columns: 25% auto;
+  padding:0.5%;
+  padding-bottom:0%;
+  margin-bottom:0%;
+}
+.grid{
+  display:grid;
+  grid-template-columns: auto 35% auto;
+  padding:1%;
+  padding-bottom:0%;
+  margin-bottom:0%;
+}
+/*BANNER*/
+#banner{
+  background-color: #E6C56B;
+}
+#banner button{
+  padding:1%;
+  width:20%;
+  background-color: #86AE94;
+  font-size: 15px;
+  color:white;
+  letter-spacing: 2.5px;
+}
+#banner button:hover{
+  background-color: #53b59e;
+}
+#banner h3{
+  font-family: sans-serif;
+  color:white;
+}
+#banner .grid-item{
+  padding-left: 3%;
+  margin-right:0%;
+  margin-top:2%;
+}
+/*LANDING*/
+#landing{
+  margin-top:0px;
+  height: 50vh;
+  min-height: 600px;
+  background-color: #ffffe7;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  color:#242424;
+}
+#landing h2{
+  font-size:65px;
+}
+#landing h4{
+  font-size:15px;
+}
+#landing h5{
+  font-size:25px;
+  padding-left:10%;
+  padding-right:10%;
+}
+/*PEPPER*/
+.grid2{
+  display:grid;
+  grid-template-columns: 60% 40%;
+  padding:1%;
+  padding-bottom:0%;
+  margin-bottom:0%;
+}
+#Pepper{
+  margin-top:-2%;
+  height: 50vh;
+  min-height: 450px;
+  background-color: #D8877C;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 0%;
+  color:white;
+}
+#Pepper h3{
+  font-size:45px;
+  padding-top:5%;
+}
+#Pepper h4{
+  font-size:15px;
+}
+#Pepper h5{
+  font-size:20px;
+  padding-left:8%;
+  padding-right:8%;
+}
+#Pepper button{
+  padding:1%;
+  width:40%;
+  background-color: #ffffe7;
+  font-size: 15px;
+  color:#D8877C;
+  letter-spacing: 2.5px;
+  font-weight: bolder;
+}
+#Pepper button:hover{
+  background-color: #ECEECF;
+}
+/*DAILY REMINDER*/
+#DailyReminder{
+  margin-top:-3.25%;
+  height: 25vh;
+  min-height: 250px;
+  background-color: white;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 0%;
+  color:#E6C56B;
+}
+#DailyReminder h3{
+  font-size:35px;
+  padding-top:3%;
+  letter-spacing: 6px;
+}
+#DailyReminder h4{
+  font-size:20px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+#DailyReminder button{
+  padding:1%;
+  width:40%;
+  background-color: #E6C56B;
+  font-size: 18px;
+  color:white;
+  letter-spacing: 2.5px;
+  font-weight: bolder;
+}
+#DailyReminder button:hover{
+  background-color: #e3bc52;
+}
+/*JOURNELY*/
+#Journely{
+  margin-top:-3.25%;
+  height: 25vh;
+  min-height: 300px;
+  background-color: #86AE94;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 0%;
+  color:white;
+}
+#Journely h3{
+  font-size:35px;
+  padding-top:3%;
+  letter-spacing: 2px;
+}
+#Journely h5{
+  font-size:20px;
+  padding-left:8%;
+  padding-right:8%;
+}
+#Journely button{
+  padding:1%;
+  width:40%;
+  background-color: white;
+  font-size: 18px;
+  color:#86AE94;
+  border:none;
+  letter-spacing: 2.5px;
+  font-weight: bolder;
+}
+#Journely button:hover{
+  background-color: #edfffb;
+}
+/*Instructions*/
+#Instructions{
+  margin-top:-3%;
+  height: 25vh;
+  min-height: 525px;
+  background-color: #fcfce8;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 0%;
+  color:#242424;
+}
+#Instructions h3{
+  font-size:35px;
+  padding-top:3%;
+  letter-spacing: 2px;
+}
+#Instructions h5{
+  font-size:20px;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:0;
+}
+.grid3{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  padding:2%;
+  padding-top:0%;
+  padding-bottom:0%;
+  margin-bottom:0%;
+  text-align: left;
+}
+#Instructions ul{
+  list-style: none;
+}
+#Instructions li{
+  padding-top:0.5%;
+  padding-bottom:0.5%;
+  padding-left:5%;
+  text-indent:-6.75%;
+}
+#Instructions li::before{
+  content:"🌞";
+}
+/*ABOUT PAGE*/
+/*ABOUT*/
+#about{
+  height: 50vh;
+  min-height: 350px;
+  background-color: white;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 0%;
+  color:#E6C56B;
+}
+#about h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:5%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#about h5{
+  font-size:20px;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:0;
+}
+/*MISSION*/
+#mission{
+  height: 50vh;
+  min-height: 350px;
+  background-color: #E6C56B;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:white;
+}
+#mission h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:5%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#mission h5{
+  font-size:20px;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:0;
+}
+/*MEALS*/
+#meals-intro h3{
+  font-size:35px;
+  padding:3%;
+  padding-bottom: 0;
+  letter-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-top: 1.5%;
+  width:24%;
+  text-align: center;
+  font-family: sans-serif;
+}
+/*RELAX*/
+/*RELAXATION*/
+#relax-header{
+  background-color: #fffff0;
+  margin-top:-1.75%;
+  padding:1%;
+  padding-bottom:0%;
+  margin-bottom:-2%;
+}
+#relax-header h3{
+  font-size:35px;
+  padding:3%;
+  padding-bottom: 0;
+  letter-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  padding-top: 1.5%;
+  width:34%;
+  text-align: center;
+  font-family: sans-serif;
+}
+#relax-intro{
+  height: 50vh;
+  min-height: 400px;
+  background-color: #fffff0;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:#D8877C;
+}
+#relax-intro h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:5%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#relax-intro h5{
+  font-size:16px;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:3%;
+  line-height: 21px;
+}
+#relax-intro a{
+  padding: 1% 5%;
+  width:40%;
+  background-color: #D8877C;
+  font-size: 15px;
+  color:#ffffe7;
+  word-spacing: 1.5px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  margin-left:5%;
+}
+#relax-intro a:hover{
+  background-color: #d68d99;
+}
+/*JOURNELY*/
+#Journely2{
+  height: 50vh;
+  min-height: 425px;
+  background-color: #86AE94;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:white;
+}
+#Journely2 h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:5%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#Journely2 h5{
+  font-size:16px;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:3%;
+  line-height: 21px;
+}
+#Journely2 button{
+  padding: 1% 5%;
+  width:40%;
+  background-color: white;
+  font-size: 15px;
+  color:#86AE94;
+  word-spacing: 1.5px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  margin-left:5%;
+  border:none;
+}
+#Journely2 button:hover{
+  background-color: #edfffb;
+}
+/*YOGA AND MEDITATION*/
+#yoga-intro{
+  height: 50vh;
+  min-height: 625px;
+  background-color: #fffff7;
+  padding-left:5%;
+  padding-right:5%;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:#E6C56B;
+}
+#yoga-intro h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:5%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#yoga-intro h5{
+  font-size:16px;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:3%;
+  line-height: 21px;
+}
+#yoga-intro button{
+  padding: 1% 5%;
+  width:40%;
+  background-color: #E6C56B;
+  font-size: 15px;
+  color:white;
+  word-spacing: 1.5px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  margin-left:5%;
+  border:none;
+}
+#yoga-intro button:hover{
+  background-color: #e3bc52;
+}
+/*DRAWING*/
+#drawing{
+  height: 50vh;
+  min-height: 525px;
+  background-color: #fffff7;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:left;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:#386F63;
+}
+#drawing h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:0%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#drawing h5{
+  font-size:16px;
+  padding-left:0%;
+  padding-right:5%;
+  margin-bottom:3%;
+  line-height: 24px;
+}
+/*MEDITATION MUSIC*/
+#music{
+  height: 50vh;
+  min-height: 375px;
+  background-color: #D8877C;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:left;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:#fffff7;
+}
+#music h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:0%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#music h5{
+  font-size:16px;
+  padding-left:0%;
+  padding-right:5%;
+  margin-bottom:3%;
+  line-height: 24px;
+}
+/*Resources*/
+#resources{
+  height: 50vh;
+  min-height: 400px;
+  background-color: #E6C56B;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:left;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:#fffff7;
+  margin-top:-2.5%;
+}
+#resources-header{
+  margin-bottom: -2%;
+}
+#resources h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:0%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#resources h5, p{
+  color:black;
+}
+/*TRACX*/
+#tracx-header{
+  background-color: #fffff7;
+  margin-top:-1%;
+  padding:1%;
+  padding-top:1.5%;
+  margin-bottom:-2%;
+}
+#tracx-header h3{
+  font-size:35px;
+  padding:3%;
+  padding-bottom: 0;
+  letter-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  padding-top: 1.5%;
+  width:34%;
+  text-align: center;
+  font-family: sans-serif;
+}
+#meal-tracx{
+  text-align:left;
+  font-family: sans-serif;
+}
+#tracx-intro{
+  height: 50vh;
+  min-height: 550px;
+  background-color: #fffff7;
+  padding-left:5%;
+  padding-right:5%;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:#E6C56B;
+}
+#tracx-intro h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:5%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#tracx-intro h5{
+  font-size:16px;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:3%;
+  line-height: 21px;
+}
+#tracx-intro h6{
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:3%;
+  line-height: 21px;
+}
+#tracx-intro button{
+  padding: 1% 5%;
+  width:40%;
+  background-color: #E6C56B;
+  font-size: 15px;
+  color:white;
+  word-spacing: 1.5px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  margin-left:5%;
+  border:none;
+}
+#tracx-intro button:hover{
+  background-color: #e3bc52;
+}
+#tracx-landing{
+  background-color: #86AE94;
+  font-family: sans-serif;
+  color:white;
+  height:300px;
+  text-align: center;
+  margin-top: -5%;
+}
+#tracx-landing h1{
+  font-size: 100px;
+  padding-top:10%;
+}
+#options{
+  height: 15vh;
+  min-height: 200px;
+  background-color: #E6C56B;
+  padding: 3% 5% 3% 5%;;
+  font-family: sans-serif;
+  color:#ffffe7;
+  font-size:25px;
+  text-align: center;
+}
+.grid10{
+  display:grid;
+  grid-template-columns: auto auto auto;
+}
+#tracx-todo{
+  padding:2%;
+  font-family: sans-serif;
+  min-height:500px;
+}
+#tracx-todo h1{
+  text-align: center;
+  color:#242424;
+}
+#tracx-fitness{
+  background-color:#E6C56B;
+  padding:2%;
+}
+#tracx-fitness h1{
+  color:#ffffe7;
+}
+#tracx-meals{
+  height: 25vh;
+  min-height: 300px;
+  background-color: #86AE94;
+  padding-left:5%;
+  padding-right:5%;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:#ffffe7;
+}
+#tracx-meals h5{
+  font-size: 18px;
+}
+#tracx-meals h3{
+  font-size:35px;
+  letter-spacing: 2px;
+}
+#tracx-meals button{
+  padding: 1% 5%;
+  width:40%;
+  background-color: #ffffe7;
+  font-size: 15px;
+  color:#386F63;
+  word-spacing: 1.5px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  border:none;
+}
+#tracx-meals button:hover{
+  background-color: #ECEECF;
+}
+/*UPCOMING*/
+#shop{
+  height: 50vh;
+  min-height: 425px;
+  background-color: white;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 0%;
+  color:#386F63;
+}
+#shop h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:5%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#shop h5{
+  font-size:20px;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:0;
+}
+#tracx{
+  height: 50vh;
+  min-height: 500px;
+  background-color: #86AE94;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  padding-bottom: 2%;
+  color:white;
+}
+#tracx h3{
+  font-size:35px;
+  padding-top:3%;
+  padding-left:5%;
+  padding-right:5%;
+  letter-spacing: 2px;
+}
+#tracx h5{
+  font-size:20px;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:0;
+}
+#landing2{
+  margin-top:0px;
+  height: 50vh;
+  min-height: 500px;
+  background-color: #E6C56B;
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+  font-family: sans-serif;
+  color:#ffffe7;
+}
+#landing2 h1{
+  font-size:150px;
+}
+.concept {
+  position: relative;
+  padding: 1em;
+  overflow: hidden;
+}
+.concept:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.concept:hover:before {
+  opacity: 0.5;
+}
+.concept-seven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.concept-seven h1 {
+  letter-spacing: 35px;
+  position: relative;
+}
+.concept-seven h1:before {
+  content: "UPCOMING";
+  position: absolute;
+  margin-left:5%;
+  max-width: 250px;
+  color: transparent;
+  letter-spacing: 10px;
+  text-shadow: none;
+  font-size: 100px;
+}
+.concept-seven:hover h1:before {
+  transition: 0.6s ease;
+  color: #ffffe7;
+  animation: jump-out 0.6s ease forwards;
+}
+
+@keyframes jump-out {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}

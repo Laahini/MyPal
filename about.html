@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MyPal</title>
+  <link rel="stylesheet" href="styles/navigation.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="styles/footer.css"/>
+  <link rel="icon" href="favicon.ico">
+  <script src="js/nav-script.js"></script>
+  <script src="js/sign.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d8d58f48fa.js" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+</head>
+
+<body>
+  <div class='navbar-wrapper'>
+      <div class='navbar left'>
+        <a class='navbar-logo' href='#signup'></a>
+      </div>
+      <div class='navbar right' id='navbar-right-web'>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+      <i id="navbar-open-menu" class="fas fa-bars fa-lg" onclick="NavOpen(event)"></i>
+      <div class='navbar right' id='navbar-right-mobile'>
+        <div id='close-navbar' class='nav-item' onclick="NavClose(event)">
+          <i id="close-button" class="fas fa-times fa-sm"></i>
+        </div>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+  </div>
+  <br></br><br></br>
+  <div id="banner">
+    <div class="grid">
+      <div></div>
+      <div class="grid-item"><h3>We're planning something big soon! Wanna learn more?</h3></div>
+      <div class="grid-item"><button onclick="openUpcoming()">Click Here!</button></div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="grid3">
+      <div clsss="grid-item">
+        <img src="media/laahini.png" style="width:55%; height:325px; padding:5px; padding-top:15px; padding-left:100px;">
+      </div>
+      <div class="grid-item">
+        <h3>About MyPal</h3>
+        <h5>MyPal was created by Laahini A as a hackathon project and initiative during the COVID-19 pandemic.
+          Like millions of other people around the glob, she faced struggles with maintaining a healthy lifestyle
+          while stuck at home. To combat these changes, she created MyPal to keep herself
+          and others motivated and active. Motivation and mental health is also a struggle, causing her to develop
+          sections for goal-keeping and more.
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div id="mission">
+    <div class="grid3">
+      <div>
+        <h3>Our Mission</h3>
+        <h5>Our mission is to help people around the globe improve their health and wellness during this COVID-19 pandemic.
+        Maintaining a healthy lifestyle is very important, especially during a time of isolation and lack of physical
+        interaction. MyPal aims to guide people in their health journey by helping them achieve their goals.
+        We will always support those who would like to improve mental and physical help. We want to achieve a growing community of like-minded
+        individuals that all aim to sustain their health and well-being.</h5>
+      </div>
+      <div>
+        <img src="media/mission.png" style="width:85%; height:100%;">
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <p>MyPal © 2021</p>
+</footer>
+</html>

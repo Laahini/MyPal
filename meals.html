@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MyPal</title>
+  <link rel="stylesheet" href="styles/navigation.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="styles/footer.css"/>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/choosetable.css"/>
+  <script src="js/nav-script.js"></script>
+  <script src="js/sign.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d8d58f48fa.js" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+</head>
+
+<body>
+  <div class='navbar-wrapper'>
+      <div class='navbar left'>
+        <a class='navbar-logo' href='#signup'></a>
+      </div>
+      <div class='navbar right' id='navbar-right-web'>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+      <i id="navbar-open-menu" class="fas fa-bars fa-lg" onclick="NavOpen(event)"></i>
+      <div class='navbar right' id='navbar-right-mobile'>
+        <div id='close-navbar' class='nav-item' onclick="NavClose(event)">
+          <i id="close-button" class="fas fa-times fa-sm"></i>
+        </div>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+  </div>
+  <br></br><br></br>
+  <div id="meals-intro">
+    <h3>🥙 MEAL IDEAS 🥙</h3>
+  </div>
+  <div id="choose-meal">
+    <div class="background">
+  <div class="container">
+    <div class="panel p-table">
+      <div class="plan">
+        <img src="media/vegan.png" alt="" class="plan-img">
+        <h2 class="plan-header">Vegetarian</h2>
+        <ul class="plan-feature">
+          <li class="plan-feature-item">No meat</li>
+        </ul>
+        <a href="meals/vegetarian-plan.html" class="plan-button">View Plan</a>
+      </div>
+
+      <div class="plan">
+        <img src="media/general.png" alt="" class="plan-img">
+        <h2 class="plan-header">General</h2>
+        <ul class="plan-feature">
+          <li class="plan-feature-item">Meat and Plants</li>
+        </ul>
+        <a href="meals/general-plan.html" class="plan-button">View Plan</a>
+      </div>
+
+      <div class="plan">
+        <img src="media/halal.png" alt="" class="plan-img">
+        <h2 class="plan-header">Halal</h2>
+        <ul class="plan-feature">
+          <li class="plan-feature-item">Muslim friendly diet</li>
+        </ul>
+        <a href="meals/halal-plan.html" class="plan-button">View Plan</a>
+      </div>
+
+      <div class="plan">
+        <img src="media/kosher.png" alt="" class="plan-img">
+        <h2 class="plan-header">Kosher</h2>
+        <ul class="plan-feature">
+          <li class="plan-feature-item">Jewish friendly diet</li>
+        </ul>
+        <a href="meals/kosher-plan.html" class="plan-button">View Plan</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+<footer>
+  <p>MyPal © 2021</p>
+</footer>
+</html>

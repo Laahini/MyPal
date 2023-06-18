@@ -1,0 +1,180 @@
+/*CARDS*/
+
+#cards{
+  font-family: sans-serif;
+}
+#cards h5{
+  margin:0px;
+  margin-left:-15%;
+  font-size:1.4em;
+  font-weight:700;
+}
+#cards p{
+  font-size:12px;
+  margin-left:-6%;
+  margin-right:6%;
+  padding:0% 3%;
+  color:black;
+}
+.grid4{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin:3%;
+  padding-left:3.5%;
+}
+.card{
+  height:18em;
+  width:18em;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+}
+.card-img{
+  height:6em;
+  width:18em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.card-descript{
+  background-color: #FAFAFC;
+  height:7em;
+  width:18em;
+  position:absolute;
+  bottom:0em;
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+.card:hover .card-descript{
+  height:0em;
+  padding:0px 1em;
+}
+.card:hover .card-img{
+  height:18em;
+}
+.card:hover{
+  background-color:white;
+}
+.card:hover{
+  background-color:white;
+  cursor:pointer;
+}
+
+/*VEGETARIAN*/
+#intro h3{
+  font-size:35px;
+  padding:3%;
+  padding-bottom: 0;
+  letter-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  padding-top: 1.5%;
+  width:34%;
+  text-align: center;
+  font-family: sans-serif;
+}
+/*VEGGIE MEALS*/
+.a{
+  background-image: url(../media/chiapudding.png);
+}
+.b{
+  background-image: url(../media/mushroomtacos.jpg);
+}
+.c{
+  background-image: url(../media/oats.png);
+}
+.d{
+  background-image: url(../media/ramen.jpg);
+}
+.e{
+  background-image: url(../media/roastedeggplant.jpg);
+}
+.f{
+  background-image: url(../media/tofubowl.jpg);
+}
+.g{
+  background-image: url(../media/veg-biryani.jpg);
+}
+.h{
+  background-image: url(../media/vegan-alfredo.jpg);
+}
+.i{
+  background-image: url(../media/banana-bread.jpg);
+}
+.j{
+  background-image: url(../media/ricebowl.jpg);
+}
+.k{
+  background-image: url(../media/frittata.jpg);
+}
+.l{
+  background-image: url(../media/blueberryyogurt.jpg);
+}
+.m{
+  background-image: url(../media/berrysmoothie.jpeg);
+}
+.n{
+  background-image: url(../media/porkrice.jpg);
+}
+.o{
+  background-image: url(../media/lamb.jpg);
+}
+.p{
+  background-image: url(../media/lemonchicken.jpg);
+}
+.q{
+  background-image: url(../media/kalesalad.jpg);
+}
+.r{
+  background-image: url(../media/chocomuffins.jpg);
+}
+.s{
+  background-image: url(../media/butternutfries.png);
+}
+.t{
+  background-image: url(../media/sloppyjoes.jpg);
+}
+.u{
+  background-image: url(../media/greensmoothie.jpg);
+}
+.v{
+  background-image: url(../media/lettucewrap.png);
+}
+.w{
+  background-image: url(../media/proteinpancake.jpg);
+}
+.x{
+  background-image: url(../media/quinoa.jpg);
+}
+.y{
+  background-image: url(../media/eggavo.jpg);
+}
+.z{
+  background-image: url(../media/asparagusrisotto.jpg);
+}
+.a1{
+  background-image: url(../media/trout.jpg);
+}
+.a2{
+  background-image: url(../media/veggiesoup.jpg);
+}
+.a3{
+  background-image: url(../media/stuffedpepper.jpg);
+}
+.a4{
+  background-image: url(../media/chickenpasta.jpg);
+}
+.a5{
+  background-image: url(../media/kheer.jpg);
+}
+.a6{
+  background-image: url(../media/pavola.jpg);
+}

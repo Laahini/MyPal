@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MyPal</title>
+  <link rel="stylesheet" href="styles/navigation.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="styles/footer.css"/>
+  <link rel="stylesheet" href="styles/tracx.css"/>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <script src="js/nav-script.js"></script>
+  <script src="js/sign.js"></script>
+  <script src="js/tracx.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d8d58f48fa.js" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/haltu/muuri@0.9.3/dist/muuri.min.js"></script>
+
+</head>
+
+<body>
+  <div class='navbar-wrapper'>
+      <div class='navbar left'>
+        <a class='navbar-logo' href='#signup'></a>
+      </div>
+      <div class='navbar right' id='navbar-right-web'>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+      <i id="navbar-open-menu" class="fas fa-bars fa-lg" onclick="NavOpen(event)"></i>
+      <div class='navbar right' id='navbar-right-mobile'>
+        <div id='close-navbar' class='nav-item' onclick="NavClose(event)">
+          <i id="close-button" class="fas fa-times fa-sm"></i>
+        </div>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+  </div>
+  <br></br><br></br>
+  <div id="tracx-header">
+    <h3> ⏱ TRACX ⏱ ‍</h3>
+  </div>
+  <div id="tracx-intro">
+    <div class="grid3">
+      <div>
+        <h3>Welcome to TRACX</h3>
+        <h5>Tracx is a new program created by MyPal to help you keep track of your meals, workouts and goals along with other
+          daily tasks you might have.</h5>
+        <h5>We know how difficult it is to maintain a certain weight or measure your goals and actually achieving them.
+          Who knows how many things we say we will do but never actually fulfill! This time, we'll help you mean what you say.
+          Tracx will keep track of the time that you have worked out for, what meals you ate, and what tasks you completed.
+          It's simple to use and easy to organize!</h5>
+        <h5>As of now, Tracx will have three main tracks for our program: meals, fitness, and tasks. Check out each section below!</h5>
+        <h6>We are planning something big related to our tracx program, so look out and read more about it by clicking below.</h6>
+        <button onclick="openUpcoming()">Click Here!</button>
+      </div>
+      <div>
+        <img src="media/tracx.png" style="padding-top:55px;">
+      </div>
+    </div>
+  </div>
+
+  <div id="options">
+    <div class="grid10">
+      <div><i class="fas fa-pizza-slice fa-2x"></i><h4>Meals</h4></div>
+      <div><i class="fas fa-running fa-2x"></i><h4>Fitness</h4></div>
+      <div><i class="fas fa-list-ul fa-2x"></i><h4>Tasks</h4></div>
+    </div>
+  </div>
+
+  <div id="tracx-meals">
+    <div class="grid3">
+      <div>
+        <img src="media/food.png" style="height:295px; width:425px; margin-left:10%; margin-top:-0.5%;">
+      </div>
+      <div>
+        <h3>Meals Tracx</h3>
+        <h5>We are proud to display our meals tracx program which can be used to track the amount of calories you have eaten in a day along with what you have eaten.
+          We hope that this inspires you to continue your health and wellness journey.</h5>
+          <button onclick="mealstracx()">Enter my Meals</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="tracx-todo">
+    <div><h1>📝 TASKS 📝</h1></div>
+    <div id="myDIV" class="header">
+  <h2 style="margin:5px">My To-Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>Exercise</li>
+  <li>Meditate</li>
+  <li class="checked">Finish math homework</li>
+  <li>Get haircut today</li>
+</ul>
+
+<script>
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+  </div>
+
+  <div id="tracx-fitness">
+    <div><h1> 🏋️ FITNESS 🏋️ </h1></div>
+    <div id="clock-container">
+			<div class="clockdisplay">
+				<input type="number" readonly id="display_hours" value="0">
+				<p>Hours</p>
+			</div>
+			<div class="clockdisplay">
+				<input type="number" readonly id="display_minutes" value="0" >
+				<p>Minutes</p>
+			</div>
+			<div class="clockdisplay">
+				<input type="number" readonly id="display_seconds" value="0">
+				<p>Seconds</p>
+			</div>
+		</div>
+		<br/><br/><br/>
+		<div id="enter-task">
+			<input type="text" placeholder="enter exercise...." id="name" maxlength="20">
+			<div id="inputTime">
+				<div>
+					<label for="hours">Hours</label>
+					<input type="number" value='0' id="hours" min='0' max='24' class="enter-time">
+				</div>
+				<div>
+					<label for="minutes">Minutes</label>
+					<input type="number" value='0' id="minutes" min='0' max='59' class="enter-time">
+				</div>
+			</div>
+			<button class="add-button" onclick="addTask()"><img src="https://img.icons8.com/material-sharp/30/ffffff/plus--v1.png" /></button>
+		</div>
+		<br/>
+
+		<h2>My Routine</h2>
+		<hr/>
+		<div id="print"></div>
+  </div>
+  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUSyphfcc6aL" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="position: fixed; bottom: 0px;"></iframe>
+</body>
+<footer>
+  <p>MyPal © 2021</p>
+</footer>
+</html>

@@ -1,0 +1,170 @@
+/*NavBar*/
+.navbar-wrapper {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    padding: 5px;
+    background-color: #386F63;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80%;
+    margin: 0 25px;
+  }
+  .navbar.left {
+    justify-content: flex-start;
+  }
+  .navbar.right {
+    justify-content: flex-end;
+    height: 60%;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 18px;
+    margin: 0 5px;
+    font-family: 'Signika', sans-serif;
+    font-size: 22px;
+    height: 100%;
+    color: white;
+    background-color: #86AE94;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .nav-item:hover {
+    cursor: pointer;
+    background-color: #53b59e;
+  }
+  .nav-item:active {
+    transform: scale(0.99);
+  }
+  .nav-item.pink {
+    color: white;
+    font-weight: 600;
+    background-color: #D8877C;
+    padding: 0px 30px;
+  }
+  .nav-item.pink:hover {
+    background-color: #b36f66;
+    color: white;
+  }
+  .navbar-logo {
+    content: url('../images/halalhacks-logo-test.png');
+    padding-top: 2px;
+    width: auto;
+    height: 48px;
+    margin: 0 8px;
+  }
+  .navbar-logo:hover {
+    cursor: pointer;
+  }
+
+  /* Mobile */
+  #close-navbar {
+    display: none;
+    justify-content: flex-end;
+  }
+  #close-button {
+    margin-right: 24px;
+  }
+  #close-navbar:hover {
+    cursor: pointer;
+  }
+  #navbar-open-menu {
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 20px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  #navbar-open-menu:hover {
+    cursor: pointer;
+  }
+  #navbar-right-mobile {
+    flex-direction: column;
+    visibility: hidden;
+    width: 0;
+    justify-content: flex-start;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #86AE94;
+    transition: width 0.3s, visibility 0.15s;
+  }
+  #navbar-right-mobile .nav-item {
+    height: 52px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid white;
+    border-radius: 0;
+    background-color: #86AE94;
+    color: black;
+  }
+  #navbar-right-mobile .nav-item:hover {
+    background-color: #53b59e;
+  }
+  #navbar-right-mobile .nav-item.pink {
+    padding: 0;
+    background-color: #D8877C;
+    color: white;
+    border-left: none;
+  }
+  #navbar-right-mobile .nav-item.pink:hover {
+    padding: 0;
+    background-color:#b36f66;
+    color: white;
+    border-left: none;
+  }
+
+  @media only screen and (max-width: 1140px) {
+    .navbar-logo {
+      content: url('../images/halalhacks-icon-logo.png');
+      height: 40px;
+    }
+    .navbar {
+      margin: 0 12px;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    .nav-item {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 840px) {
+    #navbar-open-menu {
+      display: flex;
+    }
+    #close-navbar {
+      display: flex;
+    }
+    #navbar-right-web {
+      display: none;
+    }
+    .navbar-wrapper {
+      height: 60px;
+      padding: 0;
+    }
+    .navbar {
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-logo {
+      margin: 0 16px;
+    }
+  }

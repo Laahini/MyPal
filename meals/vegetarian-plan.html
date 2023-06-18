@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MyPal</title>
+  <link rel="stylesheet" href="../styles/navigation.css"/>
+  <link rel="stylesheet" href="../styles/styles.css"/>
+  <link rel="stylesheet" href="../styles/footer.css"/>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="../styles/meals.css"/>
+  <script src="../js/nav-script.js"></script>
+  <script src="../js/sign.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d8d58f48fa.js" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+</head>
+
+<body>
+  <div class='navbar-wrapper'>
+      <div class='navbar left'>
+        <a class='navbar-logo' href='#signup'></a>
+      </div>
+      <div class='navbar right' id='navbar-right-web'>
+        <a class='nav-item' href="../home.html"> Home </a>
+        <a class='nav-item' href="../about.html"> About </a>
+        <a class='nav-item' href="../tracx.html"> Tracx </a>
+        <a class='nav-item' href="../meals.html"> Meals </a>
+        <a class='nav-item' href="../relax.html"> Relax </a>
+        <a class='nav-item pink' href="../upcoming.html"> Shop </a>
+      </div>
+      <i id="navbar-open-menu" class="fas fa-bars fa-lg" onclick="NavOpen(event)"></i>
+      <div class='navbar right' id='navbar-right-mobile'>
+        <div id='close-navbar' class='nav-item' onclick="NavClose(event)">
+          <i id="close-button" class="fas fa-times fa-sm"></i>
+        </div>
+        <a class='nav-item' href="../home.html"> Home </a>
+        <a class='nav-item' href="../about.html"> About </a>
+        <a class='nav-item' href="../tracx.html"> Tracx </a>
+        <a class='nav-item' href="../meals.html"> Meals </a>
+        <a class='nav-item' href="../relax.html"> Relax </a>
+        <a class='nav-item pink' href="../upcoming.html"> Shop </a>
+      </div>
+  </div>
+  <br></br><br></br>
+  <div id="intro">
+    <h3>🥑 VEGETARIAN PLAN 🥑</h3>
+  </div>
+  <div id="cards">
+    <div class="grid4">
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.bbcgoodfood.com/recipes/chocolate-chia-pudding"><div class="card-img a"></div></a>
+          <div class="card-descript">
+            <h5> Chocolate Chia Pudding </h5>
+            <p>Yummy vegan chocolate chia pudding!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.feastingathome.com/chipotle-portobello-tacos/"><div class="card-img b"></div></a>
+          <div class="card-descript">
+            <h5>Mushroom Tacos</h5>
+            <p>Mushrooms + tacos = delish</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.bbcgoodfood.com/recipes/chia-almond-overnight-oats"><div class="card-img c"></div></a>
+          <div class="card-descript">
+            <h5> Overnight Oats </h5>
+            <p>Easy to make and a simple classic</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.feastingathome.com/smoked-shiitake-ramen/"><div class="card-img d"></div></a>
+          <div class="card-descript">
+            <h5> Vegan Ramen </h5>
+            <p>A twist on your late night favorite</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid4">
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.feastingathome.com/zaatar-roasted-eggplant/"><div class="card-img e"></div></a>
+          <div class="card-descript">
+            <h5> Roasted Eggplant </h5>
+            <p>Steak but make it eggplant!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.feastingathome.com/sesame-brussel-sprouts-tofu-bowl/"><div class="card-img f"></div></a>
+          <div class="card-descript">
+            <h5> Tofu Bowl </h5>
+            <p>Yummy mixture of umami flavors</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.feastingathome.com/quick-chickpea-biryani/"><div class="card-img g"></div></a>
+          <div class="card-descript">
+            <h5> Veggie Biryani </h5>
+            <p>Famous Indian Biryani: Veggie Edition</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.feastingathome.com/vegan-alfredo-sauce/"><div class="card-img h"></div></a>
+          <div class="card-descript">
+            <h5> Vegan Alfredo </h5>
+            <p>Pasta lovers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<footer>
+  <p>MyPal © 2021</p>
+</footer>
+</html>

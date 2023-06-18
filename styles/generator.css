@@ -1,0 +1,41 @@
+body{
+  font-family: sans-serif;
+  background-color: #D8877C;
+  text-align: center;
+  width:98%;
+  margin-left:auto;
+  margin-right:auto;
+  color:white;
+}
+#intro-header{
+  padding:5%;
+  padding-bottom:1%;
+  padding-top:15%;
+  color:white;
+}
+#generator button{
+  padding:1%;
+  width:20%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #ffffe7;
+  font-size: 15px;
+  color:#D8877C;
+  letter-spacing: 2.5px;
+  font-weight: bolder;
+  border: none;
+}
+#generator button:hover{
+  background-color: #fafad9;
+}
+#prompt{
+  background-color: #ffffe7;
+  color:#242424;
+  width:70%;
+  margin-left:auto;
+  margin-right: auto;
+  padding:2%;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 2%;
+}

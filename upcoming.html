@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MyPal</title>
+  <link rel="stylesheet" href="styles/navigation.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="styles/footer.css"/>
+  <link rel="icon" href="favicon.ico">
+  <script src="js/nav-script.js"></script>
+  <script src="js/sign.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d8d58f48fa.js" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+</head>
+
+<body>
+  <div class='navbar-wrapper'>
+      <div class='navbar left'>
+        <a class='navbar-logo' href='#signup'></a>
+      </div>
+      <div class='navbar right' id='navbar-right-web'>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+      <i id="navbar-open-menu" class="fas fa-bars fa-lg" onclick="NavOpen(event)"></i>
+      <div class='navbar right' id='navbar-right-mobile'>
+        <div id='close-navbar' class='nav-item' onclick="NavClose(event)">
+          <i id="close-button" class="fas fa-times fa-sm"></i>
+        </div>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+  </div>
+  <br></br><br></br>
+  <div id="landing2">
+    <br><br></br><br></br>
+    <div class="concept concept-seven">
+      <h1>UPCOMING</h1>
+    </div>
+  </div>
+  <div id="shop">
+    <div class="grid3">
+      <div clsss="grid-item">
+        <img src="media/shop.png" style="padding-top:35px;">
+      </div>
+      <div class="grid-item">
+        <h3>SHOP</h3>
+        <h5>MyPal plans on forming a shop feature for you to buy Pepper the pig new outfits and characters. In order to create an incentive
+          for users to complete their tracx everyday and stay motivated, this plan awards them coinz that can be stored in their bank. With
+          these coinz, users can buy new outfits for Pepper like AstroPepper and Doctor Pepper. They can also unlock two other characters, Ron
+          and Lily, who also each have their own unique outfits and accessories. We hope that this future category will improve user experience
+          and satisfaction along with aligning to our mission.
+        </h5>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <p>MyPal © 2021</p>
+</footer>
+</html>

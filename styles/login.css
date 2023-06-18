@@ -1,0 +1,42 @@
+#formContainer{
+  background-color: white;
+  box-shadow: 0 15px 15px 0 rgba(0,0,0,0.15), 0 15px 15px 0 rgba(0,0,0,0.15);
+
+  width:50%;
+  height:50%;
+  margin:15% auto;
+  margin-top:1%;
+  margin-bottom:2%;
+  padding:50px;
+}
+#formContainer .form-item{
+  margin-left:10%;
+}
+#formContainer .signbtn{
+  margin-left: 11%;
+}
+.signbtn2{
+  margin:auto 43.5%;
+  width:200px;
+  height:30px;
+  padding: 10px 30px;
+  padding-bottom:30px;
+  color:white;
+  font-weight: bolder;
+  font-size:15px;
+  background-color: #E1BE5C;
+}
+body{
+  background-color: #ECEECF;
+}
+h1{
+  color:#386F63;
+  margin:auto 45.5%;
+  font-family: Signika;
+}
+#logo{
+  margin:auto 34.5%;
+  margin-top:1%;
+  width:30%;
+  height:30%;
+}

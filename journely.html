@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MyPal</title>
+  <link rel="stylesheet" href="styles/navigation.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="styles/footer.css"/>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/journel.css"/>
+  <script src="js/nav-script.js"></script>
+  <script src="js/sign.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d8d58f48fa.js" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+</head>
+
+<body>
+  <div class='navbar-wrapper'>
+      <div class='navbar left'>
+        <a class='navbar-logo' href='#signup'></a>
+      </div>
+      <div class='navbar right' id='navbar-right-web'>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+      <i id="navbar-open-menu" class="fas fa-bars fa-lg" onclick="NavOpen(event)"></i>
+      <div class='navbar right' id='navbar-right-mobile'>
+        <div id='close-navbar' class='nav-item' onclick="NavClose(event)">
+          <i id="close-button" class="fas fa-times fa-sm"></i>
+        </div>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+  </div>
+  <br></br><br></br>
+  <div id="journely-intro">
+    <h3>📝 JOURNELY 📝</h3>
+    <div class="grid5">
+      <div class="grid5-item">
+        <h5>WELCOME TO YOUR PERSONAL JOURNAL! </h5>
+        <h5>This is a safe place for you to write down all of your thoughtd and worries.
+        Journaling is a highly effective way to release stress, organize your thoughts and clear the mind.
+        We hope that you are more relaxed and relieved after writing your entry.</h5>
+        <h5>Journaling is a powerful mind exercise that energizes the brain by stimulating creativity and knowledge. Writing is
+          one of the best ways to exercise your brain as it requires coordinated tasks and thinking. Furthermore, this stimulation is
+          beneficial to relieving the mind of stress and regulating emotions. It offers a chance to self-reflect and document
+          important moments in your life. Noting down your emotions, daily routines, and thoughts all help you develop and mature
+          by acting as an opportunity for you to realize what influences you and what triggers stress. As a result, journaling can
+           prove to be valuable to your well-being and mental health.</h5>
+      </div>
+      <div class="grid5-item">
+        <h5>We know that writing in a blank page is intimidating so here are some sample prompts that you can write about!</h5>
+        <embed src="randomprompt.html" style="width:100%; height: 400px;">
+      </div>
+    </div>
+  </div>
+
+  <div id="myJournal">
+    <div class="journal">
+    <img src="media/linedpaper.png">
+        <textarea>Start journaling.....</textarea>
+    </div>
+  </div>
+
+</body>
+<footer>
+  <p>MyPal © 2021</p>
+</footer>
+</html>

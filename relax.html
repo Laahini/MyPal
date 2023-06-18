@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MyPal</title>
+  <link rel="stylesheet" href="styles/navigation.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="styles/footer.css"/>
+  <link rel="stylesheet" href="styles/choosetable.css"/>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/cards2.css"/>
+  <script src="js/nav-script.js"></script>
+  <script src="js/sign.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d8d58f48fa.js" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+</head>
+
+<body>
+  <div class='navbar-wrapper'>
+      <div class='navbar left'>
+        <a class='navbar-logo' href='#signup'></a>
+      </div>
+      <div class='navbar right' id='navbar-right-web'>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+      <i id="navbar-open-menu" class="fas fa-bars fa-lg" onclick="NavOpen(event)"></i>
+      <div class='navbar right' id='navbar-right-mobile'>
+        <div id='close-navbar' class='nav-item' onclick="NavClose(event)">
+          <i id="close-button" class="fas fa-times fa-sm"></i>
+        </div>
+        <a class='nav-item' href="home.html"> Home </a>
+        <a class='nav-item' href="about.html"> About </a>
+        <a class='nav-item' href="tracx.html"> Tracx </a>
+        <a class='nav-item' href="meals.html"> Meals </a>
+        <a class='nav-item' href="relax.html"> Relax </a>
+        <a class='nav-item pink' href="upcoming.html"> Shop </a>
+      </div>
+  </div>
+  <br></br><br><br><br>
+  <div id="relax-header">
+    <h3>🧘🏼‍♀️ CHILLAX TIME ‍🧘🏼‍</h3>
+  </div>
+  <div id="relax-intro">
+    <div class="grid3">
+      <div>
+        <h3>Relaxation</h3>
+        <h5>The World Health Organization describes mental health as a "state of well-being in which the individual realizes his or her own abilities,
+          can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community."
+          Mental health is crucial to a healthy lifestyle and your wellness but is not simple to achieve, especially without support.
+          MyPal wants to help you achieve a stable mental health. That's why we provide many different reosurces for you to utilize and wind down.</h5>
+        <h5>Want to learn more about Mental Health?</h5>
+        <a href="https://www.youtube.com/watch?v=DxIDKZHW3-E">Click Here</a>
+      </div>
+      <div>
+        <img src="media/relax.png" style="padding-top:5px;">
+      </div>
+    </div>
+  </div>
+  <div id="Journely2">
+    <div class="grid3">
+      <div>
+        <h3>Introducing Journely.</h3>
+        <h5>Journely is an online journal for you to discuss and write down your thoughts, fears, dreams, goals and
+          more. We created Journely so that you could clear your mind and relax.
+          Journaling is said to be highly effective for managing stress levels and anxiety. The simple task helps organize your thoughts and see them
+          visually, making them more clear and easy to understand. Furthermore, journaling assists in helping you reflect upon yourself and
+          compare how you have improved or understand what causes problems. At MyPal,
+          we want to make sure that you have a safe space to write down whatever you may wish.</h5>
+          <h5>Give Journely a try now!</h5>
+        <button onclick="openJournal()">I want to Journal</button>
+      </div>
+      <div>
+        <img src="media/journely.png" style="padding-top:55px; padding-left:55px;">
+      </div>
+    </div>
+  </div>
+  <div id="yoga">
+    <div id="yoga-intro">
+      <div class="grid3">
+        <div>
+          <img src="media/yoga4.png" style="padding-top:155px;">
+        </div>
+        <div>
+          <h3>YOGA & MEDITATION</h3>
+          <h5>You may have noticed the craze about yoga before but you might wonder, what's so cool about it.
+          Yoga is a physical exercise that requires breath control. relaxation, diet control, positive thinking and meditation.
+          The goal is to create a state of harmony and connection between the body, mid and environment.
+          This ancient practice originates from South Asia and has several prove health benefits. Yoga is not extremely physically
+          demanding but the intensity can increase as you progress in your journey.
+          It is perfect to do at home and with others because it requires very little equipment, just a yoga mat and some workout clothes!</h5>
+          <h5>As mentioned, there are several physical and mental benefits of yoga. Yoga helps relax your mind as it requires you to clear
+          your thoughts and meditate to focus on becoming one with yourself. According to studies, yoga also helps you become a mindful eater and
+          aids in weight loss/maintenance. Furthermore, it assists in improving your breathing which will greatly help with cardiovascular fitness.
+          It also helps you soothe anxiety and releive you of stress. Doing yoga daily or even weekly is highly beneficial in getting some movement
+          activity while staying at home(although you can do it outside too!).</h5>
+          <h5>Want to learn more about the benefits of yoga?</h5>
+          <button onclick="openYoga()">Click Here</button>
+        </div>
+      </div>
+    </div>
+    <div id="yoga-pick">
+      <div class="background">
+    <div class="container">
+      <div class="panel p-table">
+        <div class="plan">
+          <img src="media/yoga1.png" alt="" class="plan-img">
+          <h2 class="plan-header">Beginner</h2>
+          <ul class="plan-feature">
+            <li class="plan-feature-item">Easy, simple poses</li>
+            <li class="plan-feature-item2"> ⏰ 30 Minutes</li>
+          </ul>
+          <a href="https://www.youtube.com/watch?v=2M6BPzs6R88" class="plan-button">Start Now</a>
+        </div>
+
+        <div class="plan">
+          <img src="media/yoga2.png" alt="" class="plan-img">
+          <h2 class="plan-header">Intermediate</h2>
+          <ul class="plan-feature">
+            <li class="plan-feature-item">Transitional Practice</li>
+            <li class="plan-feature-item2"> ⏰ 20 Minutes</li>
+          </ul>
+          <a href="https://www.youtube.com/watch?v=CCsdPL5NlWo" class="plan-button">Start Now</a>
+        </div>
+
+        <div class="plan">
+          <img src="media/yoga3.png" alt="" class="plan-img">
+          <h2 class="plan-header">Advanced</h2>
+          <ul class="plan-feature">
+            <li class="plan-feature-item">Challenging poses</li>
+            <li class="plan-feature-item2"> ⏰ 30 Minutes</li>
+          </ul>
+          <a href="https://www.youtube.com/watch?v=pn2dsWv9quE" class="plan-button">Start Now</a>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="drawing">
+    <div class="grid2">
+      <div>
+        <iframe src="https://jspaint.app/#local:2cfc837c830f4" style=" width:600px;height: 450px; margin:5%; margin-left:0%; border:none;"></iframe>
+      </div>
+      <div>
+        <h3>Doodles and Drawings</h3>
+        <h5>Everyone is different and everyone releases stress in their own way. Some people may find it effective
+        to doodle and draw as a way to relax. With the given state of the COVID-19 pandemic, many outdoor activites are cancelled and social interaction is limited.
+        Therefore, to calm down anxiety and improve your mental health despite these potential strains, MyPal provides you a creative safe space.
+        Doodling is noted to be very helpful in expressing thoughts and of course, displaying your creativity. If you're struggling for prompts, just draw whatever you see! </h5>
+        <h5>Have fun drawing!</h5>
+      </div>
+    </div>
+  </div>
+
+  <div id="music">
+    <div class="grid3">
+      <div>
+        <h3>Meditation Music</h3>
+        <h5>Music is one of the seversl ways you can relieve stress after a long and tiring day. Paired with meditation, a practice that requires the
+          cleansing of the mind, helps achieve a state of peace and tranquility. Meditating releases your mind of worries and any stress you might have.
+          It is daunting to think of all the work and tasks you might need to complete but it is equally important to have mental stability. Music assists in cleansing
+          your mind as the specific rhythms and sounds promote unifying measures between the brain and the body.
+          MyPal has compiled some soothing meditation music for you to use while meditating.
+          By the way, the only equipment you need for meditating is a yoga mat! </h5>
+      </div>
+      <div>
+        <iframe src="https://open.spotify.com/embed/playlist/3ksy3Zso4vdt4JIzTYvpF9" width="100%" height="350" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:4.5%;"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div id="resources">
+    <div id="resources-header">
+      <h3>Other Resources</h3>
+    </div>
+
+    <div id="resources-cards">
+      <ul class="cards">
+  <li>
+    <a href="https://ok2talk.org/" class="card">
+      <img src="media/ok2talk.png" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc"><path /></svg>
+          <div class="card__header-text">
+            <h4 class="card__title">OK2TALK</h4>
+          </div>
+        </div>
+        <p class="card__description">OK2TALK is a community that encourages teens and young adults struggling with
+          mental health problems to share their personal stories of recovery, tragedy, struggle or hope using
+          any medium of creative content.</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.crisistextline.org/" class="card">
+      <img src="media/crisistextline.png" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc"><path /></svg>
+          <div class="card__header-text">
+            <h4 class="card__title">Crisis Text Line</h4>
+          </div>
+        </div>
+        <p class="card__description">Crisis Text line is a 24-hour support for those in crisis.
+          Text 741741 from anywhere in the US and you will receive an automated text asking you what your crisis is.
+          Within minutes, a live trained crisis counselor will answer your text for free.</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.calm.com/" class="card">
+      <img src="media/calm.png" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" ><path/></svg>
+          <div class="card__header-text">
+            <h4 class="card__title">Calm</h4>
+          </div>
+        </div>
+        <p class="card__description"> Calm is a website that assists you in relieving stress through
+          various activities such as meditation with different voices and guided practice.</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="https://xhalr.com/" class="card">
+      <img src="media/Exhaler.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc"><path /></svg>
+          <div class="card__header-text">
+            <h4 class="card__title">Exhaler</h4>
+          </div>
+        </div>
+        <p class="card__description">Exhaler is a free website that helps you practice breathing techniques for relaxation and managing anxiety.
+          It can help clear your mind and also provide respiratory improvement. </p>
+      </div>
+    </a>
+  </li>
+
+</ul>
+    </div>
+  </div>
+
+</body>
+<footer>
+  <p>MyPal © 2021</p>
+</footer>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MyPal</title>
+  <link rel="stylesheet" href="../styles/navigation.css"/>
+  <link rel="stylesheet" href="../styles/styles.css"/>
+  <link rel="stylesheet" href="..styles/footer.css"/>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="../styles/meals.css"/>
+  <script src="../js/nav-script.js"></script>
+  <script src="../js/sign.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d8d58f48fa.js" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+</head>
+
+<body>
+  <div class='navbar-wrapper'>
+      <div class='navbar left'>
+        <a class='navbar-logo' href='#signup'></a>
+      </div>
+      <div class='navbar right' id='navbar-right-web'>
+        <a class='nav-item' href="../home.html"> Home </a>
+        <a class='nav-item' href="../about.html"> About </a>
+        <a class='nav-item' href="../tracx.html"> Tracx </a>
+        <a class='nav-item' href="../meals.html"> Meals </a>
+        <a class='nav-item' href="../relax.html"> Relax </a>
+        <a class='nav-item pink' href="../upcoming.html"> Shop </a>
+      </div>
+      <i id="navbar-open-menu" class="fas fa-bars fa-lg" onclick="NavOpen(event)"></i>
+      <div class='navbar right' id='navbar-right-mobile'>
+        <div id='close-navbar' class='nav-item' onclick="NavClose(event)">
+          <i id="close-button" class="fas fa-times fa-sm"></i>
+        </div>
+        <a class='nav-item' href="../home.html"> Home </a>
+        <a class='nav-item' href="../about.html"> About </a>
+        <a class='nav-item' href="../tracx.html"> Tracx </a>
+        <a class='nav-item' href="../meals.html"> Meals </a>
+        <a class='nav-item' href="../relax.html"> Relax </a>
+        <a class='nav-item pink' href="../upcoming.html"> Shop </a>
+      </div>
+  </div>
+  <br></br><br></br>
+  <div id="intro">
+    <h3>☪️ HALAL PLAN ☪️</h3>
+  </div>
+  <div id="cards">
+    <div class="grid4">
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.soscuisine.com/recipe/baked-eggs-avocado"><div class="card-img y"></div></a>
+          <div class="card-descript">
+            <h5> Avocado Eggs </h5>
+            <p>Protein filled breakfast and fan fave: avocado</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.soscuisine.com/recipe/asparagus-shrimp-risotto"><div class="card-img z"></div></a>
+          <div class="card-descript">
+            <h5> Asparagus Shrimp Risotto </h5>
+            <p>The perfect dinner, shrimps + asparagus</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.soscuisine.com/recipe/almond-trout-alcohol-free"><div class="card-img a1"></div></a>
+          <div class="card-descript">
+            <h5> Almond Trout </h5>
+            <p>Seafood rocks!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.soscuisine.com/recipe/asian-vegetable-soup"><div class="card-img a2"></div></a>
+          <div class="card-descript">
+            <h5> Veggie Soup </h5>
+            <p>Classic, simple, easy recipe for everything</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid4">
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.delish.com/cooking/recipe-ideas/a23014857/classic-stuffed-peppers-recipe/"><div class="card-img a3"></div></a>
+          <div class="card-descript">
+            <h5> Stuffed Peppers </h5>
+            <p>Hint of Hispanic food!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://halaal.recipes/recipes/details/15443/chicken-pasta"><div class="card-img a4"></div></a>
+          <div class="card-descript">
+            <h5> Chicken Pasta </h5>
+            <p>Perfect for special days</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://food.ndtv.com/recipe-kheer-100537"><div class="card-img a5"></div></a>
+          <div class="card-descript">
+            <h5> Kheer </h5>
+            <p>MMMMM yes rice pudding!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="card">
+        <div class="card">
+          <a href="https://www.cookhalaal.com/recipe/chocolate-cheesecake-pavlova/"><div class="card-img a6"></div></a>
+          <div class="card-descript">
+            <h5> Chocolate Pavola </h5>
+            <p>Your soon to be favorite cake</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<footer>
+  <p>MyPal © 2021</p>
+</footer>
+</html>

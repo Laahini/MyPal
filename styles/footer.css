@@ -1,0 +1,12 @@
+footer{
+  text-align: center;
+  padding:0.1%;
+  height: 1vh;
+  min-height: 50px;
+  background-color: #386F63;
+  font-family: sans-serif;
+  color:#ffffe7;
+}
+p{
+    color:#ffffe7;
+}
